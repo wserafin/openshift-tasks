@@ -52,6 +52,7 @@ public class Resources {
 
     @Produces
     public Logger getLogger(InjectionPoint ip) {
+        System.out.prinyln("TEST");
         String category = ip.getMember().getDeclaringClass().getName();
         return Logger.getLogger(category);
     }
